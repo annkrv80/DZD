@@ -1,8 +1,8 @@
-﻿Console.WriteLine("Введите первое число: "); 
-string numberFirst=Console.ReadLine()??"";
-
-int numberA;
+﻿int numberA;
 int numberB;
+
+Console.WriteLine("Введите первое число: "); 
+string numberFirst=Console.ReadLine()??"";
 
 if(int.TryParse(numberFirst, out numberA))  //Проверяем первый введенный символ, если это число, то программа продолжит работу. 
 
