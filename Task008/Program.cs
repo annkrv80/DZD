@@ -1,16 +1,8 @@
-﻿Console.WriteLine("Введите число: ");
-int N=int.Parse(Console.ReadLine()??"");
-int x;
-int count = N;
-while (N>1)
-{x=N-1;
-   if((x%2)==0)
-   {
-    Console.WriteLine(x);
-   }
-   count=count-1;
-
-}
+﻿Console.WriteLine("Введите число:");
+int n =int.Parse(Console.ReadLine()??"");
+for (int i =1; i <=n; i++)
+     if (i % 2 ==0)
+        Console.Write(i);
 
 
 
