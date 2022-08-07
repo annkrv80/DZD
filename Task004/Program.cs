@@ -1,9 +1,10 @@
-﻿Console.WriteLine("Введите перое число...");
-string numberFirst=Console.ReadLine()??"";
-int a; 
+﻿int a; 
 int b;
 int c;
 int max=0;
+
+Console.WriteLine("Введите перое число...");
+string numberFirst=Console.ReadLine()??"";
 
 if(int.TryParse(numberFirst,out a))
 { max=a;
