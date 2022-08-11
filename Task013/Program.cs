@@ -3,7 +3,6 @@
 int num = new Random().Next(0, 100000);
 int a1;
 int a2;
-int a3;
 
 if (num > 0 && num <= 99)
 {
