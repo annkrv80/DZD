@@ -29,7 +29,7 @@ if (str.Length == 5)
 }
 else
 {
-    Console.WriteLine("Ошибка введите пятизначное число");
+    Console.WriteLine("Ошибка!Введите пятизначное число");
 }
 
 
