@@ -1,16 +1,37 @@
 ﻿// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 Console.Clear();
 
-int [] array = new int [8];
+int[] array = new int[8];
+int num;
 
-for (int i=0; i<8; i++)
+void FillingArray(int[] array)
 {
-    Console.Write($"Введите элемент массива под индексом {i}:\t");
-    array[i]=int.Parse(Console.ReadLine());
+    for (int i = 0; i < 8; i++)
+    {
+        Console.Write($"Введите элемент массива под индексом {i}:\t");
+        string number=Console.ReadLine()??"";
+
+        if(int.TryParse(number, out num))
+        {
+            array[i] = num;
+        }
+        else
+        {
+            Console.WriteLine ("Ошибка! Введите число!");
+        }
+    }
 }
-Console.WriteLine("Вывод масcива");
-for (int i=0; i<8; i++)
+
+void PrintArray(int[] array)
+
 {
-    Console.WriteLine(array[i]);
+    Console.WriteLine("Вывод масcива");
     
+    for (int i = 0; i < 8; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
 }
+
+FillingArray(array);
+PrintArray(array);
