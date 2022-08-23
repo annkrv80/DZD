@@ -6,7 +6,7 @@ Console.Clear();
 int[] array = GetArray(10, -15, 15);
 Console.WriteLine(String.Join(" ", array));
 int oddNumberSum = GetOddNumberSum(array);
-Console.WriteLine($"Сумма элеметов, стоящих на нечетных позициях равна {oddNumberSum}");
+Console.WriteLine($"Сумма элеметов, стоящих на нечетных позициях равна {oddNumberSum}.");
 
 
 
