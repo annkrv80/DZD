@@ -22,9 +22,15 @@ int[] GetNumberFromUser(string message, string errorMessage)
             Console.Write(message);
             bool isCorrect = int.TryParse(Console.ReadLine(), out int userNumber);
             if (isCorrect)
+            {
                 number[i] = userNumber;
-            break;
-            Console.WriteLine(errorMessage);
+                break;
+            }
+            else
+            {
+                Console.WriteLine(errorMessage);
+            }
+            
         }
     }
     return number;
