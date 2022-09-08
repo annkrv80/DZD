@@ -2,14 +2,14 @@
 Console.Clear();
 
 int m = GetNumberFromUser("Введите целое число M: ", "Ошибка ввода");
-int n = GetNumberFromUser("Введите целое число N:", "Ошибка ввода");
-if (m > n)
+int n = GetNumberFromUser("Введите целое число N: ", "Ошибка ввода");
+if (m < n)
 {
-    Console.WriteLine("Ошибка ввода! Первое число должно быть меньше второго!");
+    PrintNumber(m, n);
 }
 else
 {
-    PrintNumber(m, n);
+    Console.WriteLine("Ошибка ввода! Первое число должно быть меньше второго!");
 }
 
 /////////////////////////////////////////////////////////////////////
