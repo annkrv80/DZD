@@ -6,7 +6,7 @@ int n = GetNumberFromUser("Введите целое число N: ", "Ошиб�
 if (m < n)
 {
     GetSum(m, n);
-    Console.WriteLine($"Cумма чисел между {m} и {n} равна {GetSum(m, n)}");
+    Console.WriteLine($"Cумма элементов в промежутке от {m} до {n} равна {GetSum(m, n)}");
     
 }
 else
