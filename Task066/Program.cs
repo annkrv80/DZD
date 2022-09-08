@@ -2,15 +2,16 @@
 //Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 
 int m = GetNumberFromUser("Введите целое число M: ", "Ошибка ввода");
-int n = GetNumberFromUser("Введите целое число N:", "Ошибка ввода");
-if (m > n)
+int n = GetNumberFromUser("Введите целое число N: ", "Ошибка ввода");
+if (m < n)
 {
-    Console.WriteLine("Ошибка ввода! Первое число должно быть меньше второго!");
+    GetSum(m, n);
+    Console.WriteLine($"Cумма чисел между {m} и {n} равна {GetSum(m, n)}");
+    
 }
 else
 {
-    GetSum(m, n);
-    Console.WriteLine($"сумма чисел между {m} и {n} равна {GetSum(m, n)}");
+   Console.WriteLine("Ошибка ввода! Первое число должно быть меньше второго!"); 
 }
 
 
